@@ -1,5 +1,5 @@
 ---
-layout: post_page
+layout: post
 title: Three Reflux Tricks
 ---
 
@@ -26,7 +26,7 @@ data in its state property, we can give the same getInitialState
 method to each store, one that transforms that state property into a
 JavaScript object:
 
-```javascript
+```
 Reflux.StoreMethods.getInitialState = -> @state.toJS()
 
 MyStore = Reflux.createStore
