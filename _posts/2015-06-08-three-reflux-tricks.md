@@ -26,16 +26,15 @@ data in its state property, we can give the same getInitialState
 method to each store, one that transforms that state property into a
 JavaScript object:
 
-```
+```coffeescript
 Reflux.StoreMethods.getInitialState = -> @state.toJS()
 
 MyStore = Reflux.createStore
-init: -> @state = Immutable.fromJS(one: "two")
+  init: -> @state = Immutable.fromJS(one: "two")
 
 MyComponent = React.createClass
-mixins: [Reflux.connect(MyStore, 'myStore')]
-render: ->
-<h1> {@state.myStore.one}</h1>
+  mixins: [Reflux.connect(MyStore, 'myStore')]
+  render: -> <h1> {@state.myStore.one}</h1>
 ```
 
 How about making those store updates easier? Normally, you call the
@@ -46,17 +45,17 @@ for us, is always the contents of the store. So let’s make it
 super-easy to both update the store’s immutable data and notify the
 listeners with that data:
 
-```javascript
+```coffeescript
 Reflux.StoreMethods.updateState = (state) ->
-@state = state
-@trigger(@getInitialState())
+  @state = state
+  @trigger(@getInitialState())
 
 MyActions = Reflux.createActions(['change'])
 
 MyStore = Reflux.createStore
-listenables: [MyActions]
-init: -> @state = Immutable.fromJS(one: "two")
-onChange: -> @updateState(@state.set('one', 'three'))
+  listenables: [MyActions]
+  init: -> @state = Immutable.fromJS(one: "two")
+  onChange: -> @updateState(@state.set('one', 'three'))
 ```
 
 ## Fast Action Wiring
@@ -66,26 +65,25 @@ MyActions.change in my view components — I just want to call change,
 like how stores can use onChange. We’ve come up with a simple solution
 to make me a lazier programmer: `Reflux.wireUp`:
 
-```javascript
+```coffeescript
 Reflux.wireUp = (actions) ->
-obj = {}
-creator = (value) ->
-(args...) ->
-(e) ->
-e.stopPropagation()
-e.preventDefault()
+  obj = {}
+  creator = (value) ->
+  (args...) ->
+  (e) ->
+  e.stopPropagation()
+  e.preventDefault()
 
-value(args...)
+  value(args...)
 
 for action, handler of actions
-obj[action] = creator(handler)
+  obj[action] = creator(handler)
 
 obj
 
 MyComponent = React.createClass
-mixins: [Reflux.wireUp(MyActions)]
-render: ->
-<a onClick={@change()}>Change!</a>
+  mixins: [Reflux.wireUp(MyActions)]
+  render: -> <a onClick={@change()}>Change!</a>
 ```
 
 Every base level action is now available as a method on the store
@@ -93,9 +91,8 @@ itself. Call that method to create an event handler. Any parameters
 provided to the method are passed along to the action listener, so
 that you can do things like:
 
-```javascript
-@state.items.map (item) =>
-<a onClick={@change(item.id)}>{item.name}</a>
+```coffeescript
+@state.items.map (item) => <a onClick={@change(item.id)}>{item.name}</a>
 ```
 
 ## Browserify Your Action Listeners
@@ -105,21 +102,20 @@ you can use the require-globify plugin and a bit of Reflux code to put
 all your action listeners into individual files and load them with one
 line, greatly reducing the size and complexity of your actions files:
 
-```javascript
+```coffeescript
 Reflux.populateListens = (actions, listens) ->
-_.each(listens, (code, req) ->
-[parts..., final] = req.split('.')
+  _.each(listens, (code, req) -> [parts..., final] = req.split('.')
 
-reducer = (base, part) -> base[part]
-base = parts.reduce(reducer, actions)
+  reducer = (base, part) -> base[part]
+  base = parts.reduce(reducer, actions)
 
-base[final].listen (args...) -> code.call(this, args..., actions)
-)
+  base[final].listen (args...) -> code.call(this, args..., actions)
+  )
 
 MyActions = Reflux.createActions(['create'])
 
-//# there's a file in this directory called create.coffee whose
-//# module.exports defines the listener function for MyActions.create.
+# there's a file in this directory called create.coffee whose
+# module.exports defines the listener function for MyActions.create.
 Reflux.populateListens MyActions, require('./MyActions/*', hash: true)
 ```
 
