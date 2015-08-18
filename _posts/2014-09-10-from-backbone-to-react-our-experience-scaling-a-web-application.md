@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "From Backbone To React: Our Experience Scaling a Web Application"
+category: "Sonian Technology"
+author: Murilo Pereira
 ---
 
 At Sonian we have a small team building interactive visualizations where companies can better understand their massive amounts of email data. Building this kind of program is non-trivial: data needs to be synchronized between servers and complex interfaces through user interactions or otherwise while at the same time having the user perceive it as “feeling right”. Like other software disciplines it’s a combination of engineering and art.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reflections on ThoughtWorks’ Latest Tech Radar
+category: commentary
 ---
 
 I enjoy reading through ThoughtWorks’ Tech Radar every time it comes out.  I heard ThoughtWorker Neal Ford talk about it in a No Fluff conference, and thought it was a great idea for facilitating a conversation within your team or company, and for giving you a personal yardstick for keeping abreast of industry developments.

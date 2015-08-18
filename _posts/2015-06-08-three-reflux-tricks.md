@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Three Reflux Tricks
+categories:
+- "Open source projects"
+- "Sonian Technology"
 ---
 
 By [John Bintz](https://twitter.com/johnbintz)
