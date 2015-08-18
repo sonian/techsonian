@@ -12,7 +12,6 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
     <span class="post-date">Posted on {{ post.date | date_to_string }}
       {% if post.author %}by {{ post.author }}{% endif %}
       {% if post.categories.size > 0 %}
