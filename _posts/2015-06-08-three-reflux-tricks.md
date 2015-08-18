@@ -8,26 +8,31 @@ categories:
 
 By [John Bintz](https://twitter.com/johnbintz)
 
-We’ve been using Reflux, a Flux architecture library, in one of our
-apps, and it’s made reasoning out the flow of data and interactions
-within the user interface easier. Reflux is simple to extend, allowing
-you to easily abstract out common interactions and reduce boilerplate
-code. Here’s three of the tricks we’re using to make using Reflux even
-nicer.
+We’ve been using [Reflux][], a [Flux][] architecture library, in one
+of our apps, and it’s made reasoning out the flow of data and
+interactions within the user interface easier. Reflux is simple to
+extend, allowing you to easily abstract out common interactions and
+reduce boilerplate code. Here’s three of the tricks we’re using to
+make using Reflux even nicer.
+
+[reflux]: https://github.com/spoike/refluxjs
+[flux]: https://facebook.github.io/flux/docs/overview.html
 
 ## Making Store Updates & Retrieval Simpler
 
-We use Immutable for the data in each store. However, using Immutable
-data structures in the React view layer can start looking real ugly,
-with data.get(‘something’) strewn all about the code. Since we use
-CJSX to define the DOM, we definitely prefer brevity in our HTML code,
-so why not use the simpler JavaScript representations of our store’s
-data? If you’re using Reflux.connect to plug a store directly into a
-component, the getInitialState method on each store decides what data
-should be placed into the component. If we have each store house its
-data in its state property, we can give the same getInitialState
-method to each store, one that transforms that state property into a
-JavaScript object:
+We use [Immutable](http://facebook.github.io/immutable-js/docs/#/) for
+the data in each store. However, using Immutable data structures in
+the React view layer can start looking real ugly, with
+data.get(‘something’) strewn all about the code. Since we use
+[CJSX](https://github.com/jsdf/coffee-reactify) to define the DOM, we
+definitely prefer brevity in our HTML code, so why not use the simpler
+JavaScript representations of our store’s data? If you’re using
+Reflux.connect to plug a store directly into a component, the
+getInitialState method on each store decides what data should be
+placed into the component. If we have each store house its data in its
+state property, we can give the same getInitialState method to each
+store, one that transforms that state property into a JavaScript
+object:
 
 ```coffeescript
 Reflux.StoreMethods.getInitialState = -> @state.toJS()
@@ -100,10 +105,13 @@ that you can do things like:
 
 ## Browserify Your Action Listeners
 
-If you’re using Browserify to manage your JavaScript frontend code,
-you can use the require-globify plugin and a bit of Reflux code to put
+If you’re using [Browserify][] to manage your JavaScript frontend code,
+you can use the [require-globify][] plugin and a bit of Reflux code to put
 all your action listeners into individual files and load them with one
 line, greatly reducing the size and complexity of your actions files:
+
+[browserify]: https://github.com/substack/node-browserify
+[require-globify]: https://github.com/capaj/require-globify
 
 ```coffeescript
 Reflux.populateListens = (actions, listens) ->
