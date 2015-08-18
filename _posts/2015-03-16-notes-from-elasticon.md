@@ -5,7 +5,8 @@ categories: [Open source projects, Sonian Technology]
 authors: [Dan Dillinger, Ian Truslove]
 ---
 
-By Dan Dillinger, Ian Truslove
+By [Dan Dillinger](https://twitter.com/yazirian),
+[Ian Truslove](https://twitter.com/iantruslove)
 
 ![Sonian ❤ ES]({{ site.baseurl }}/public/images/2015/03/sonian-heart-es.png)
 
