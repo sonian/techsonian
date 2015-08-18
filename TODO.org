@@ -1,22 +1,25 @@
 * Todos
 
 - [-] Content
-  - [ ] Pages need category metadata
-  - [ ] Pages need meta description in front matter
+  - [ ] All pages need category metadata
+  - [ ] All pages need meta description in front matter
   - [X] Copy remaining page content from original site
-  - [ ] Evaluate approach to comments
+  - [ ] Evaluate approaches to comments - do we even want them?
   - [X] Fix all links and inline images in all posts
-  - [ ] Have authors review all content (i.e. Murilo)
+  - [ ] Have authors review all content (Murilo, Dan, John, Greg)
+  - [ ] Sensu post - float the image to the right
+  - [ ] Pete Z's post - float right and left the images respectively
+  - [ ] About page
+  - [ ] Review the license w/ Greg
 - [-] Layout 
   - [X] Fix permalinks
-  - [ ] Sensu post - float the image to the right
-  - [ ] Pete Z post - float right and left the images respectively
-  - [ ] Make sure there aren't any dead links
   - [X] Fix extra slash in URLs
+  - [ ] Add search functionality
   - [ ] Favicon
   - [ ] Social media links
   - [ ] Category index pages
   - [ ] Archives by date pages (titles and descriptions only)
-  - [ ] RSS / XML Sitemap
+  - [X] RSS / XML Sitemap
 - [ ] Other
+  - [ ] Make sure there aren't any dead links
   - [ ] CNAME setup and DNS work for release
