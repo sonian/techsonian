@@ -14,12 +14,14 @@
 - [-] Layout 
   - [X] Fix permalinks
   - [X] Fix extra slash in URLs
+  - [ ] Generate "By {author}" bylines w/ twitter links at the top of the posts
   - [ ] Add search functionality
   - [X] Favicon
   - [ ] Social media links
   - [ ] Category index pages
   - [ ] Archives by date pages (titles and descriptions only)
   - [X] RSS / XML Sitemap
+  - [ ] Author index pages
 - [ ] Other
   - [ ] Make sure there aren't any dead links
   - [ ] CNAME setup and DNS work for release
