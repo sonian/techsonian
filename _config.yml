@@ -9,8 +9,8 @@ redcarpet:
   extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 
 # Setup
-title:               techSonian
-tagline:             "Sonian's Technology Blog. All about forging ahead in the cloud."
+title:               techSONIAN
+tagline:             "Sonian's technology blog. all about forging ahead in the cloud."
 description:         "An early innovator in cloud-based archiving, Sonian preserves, protects and presents the world’s information."
 url:                 http://iantruslove.github.io
 baseurl:             '/techsonian'
