@@ -14,6 +14,7 @@
 - [-] Layout 
   - [X] Fix permalinks
   - [X] Fix extra slash in URLs
+  - [ ] Add analytics tracker(s)
   - [ ] Generate "By {author}" bylines w/ twitter links at the top of the posts
   - [ ] More clear delineation between posts in the page layout
   - [ ] Add search functionality
@@ -25,4 +26,7 @@
   - [ ] Author index pages
 - [ ] Other
   - [ ] Make sure there aren't any dead links
+    - Maybe take a look at a dump of whatever analytics package is in
+      there now and quickly curl all the visited URLs to spot
+      problems
   - [ ] CNAME setup and DNS work for release
