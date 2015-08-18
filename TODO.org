@@ -15,6 +15,7 @@
   - [X] Fix permalinks
   - [X] Fix extra slash in URLs
   - [ ] Generate "By {author}" bylines w/ twitter links at the top of the posts
+  - [ ] More clear delineation between posts in the page layout
   - [ ] Add search functionality
   - [X] Favicon
   - [ ] Social media links
