@@ -15,7 +15,7 @@
   - [X] Fix permalinks
   - [X] Fix extra slash in URLs
   - [ ] Add search functionality
-  - [ ] Favicon
+  - [X] Favicon
   - [ ] Social media links
   - [ ] Category index pages
   - [ ] Archives by date pages (titles and descriptions only)
