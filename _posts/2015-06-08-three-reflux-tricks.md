@@ -77,10 +77,10 @@ to make me a lazier programmer: `Reflux.wireUp`:
 Reflux.wireUp = (actions) ->
   obj = {}
   creator = (value) ->
-  (args...) ->
-  (e) ->
-  e.stopPropagation()
-  e.preventDefault()
+    (args...) ->
+      (e) ->
+        e.stopPropagation()
+        e.preventDefault()
 
   value(args...)
 
