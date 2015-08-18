@@ -1,0 +1,22 @@
+* Todos
+
+- [-] Content
+  - [ ] Pages need category metadata
+  - [ ] Pages need meta description in front matter
+  - [X] Copy remaining page content from original site
+  - [ ] Evaluate approach to comments
+  - [X] Fix all links and inline images in all posts
+  - [ ] Have authors review all content (i.e. Murilo)
+- [-] Layout 
+  - [X] Fix permalinks
+  - [ ] Sensu post - float the image to the right
+  - [ ] Pete Z post - float right and left the images respectively
+  - [ ] Make sure there aren't any dead links
+  - [X] Fix extra slash in URLs
+  - [ ] Favicon
+  - [ ] Social media links
+  - [ ] Category index pages
+  - [ ] Archives by date pages (titles and descriptions only)
+  - [ ] RSS / XML Sitemap
+- [ ] Other
+  - [ ] CNAME setup and DNS work for release
