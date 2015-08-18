@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Abundant Innovation @Sonian: June 2013
+title: "Abundant Innovation @Sonian: June 2013"
 category: The Sonian Way
 description: ""
 author: Greg Arnette
