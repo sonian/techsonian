@@ -9,7 +9,7 @@
   - [ ] Have authors review all content (Murilo, Dan, John, Greg)
   - [ ] Sensu post - float the image to the right
   - [ ] Pete Z's post - float right and left the images respectively
-  - [ ] About page
+  - [X] Remove the about page
   - [ ] Review the license w/ Greg
 - [-] Layout 
   - [X] Fix permalinks
