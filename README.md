@@ -1,4 +1,24 @@
-# Lanyon
+# techSonian: Sonian's tech blog
+
+Visit the blog at http://techsonian.net
+
+## Getting Started
+
+1. Clone this repo, and `git checkout gh-pages`.
+1. Install Ruby 2.0.0 or better. You might want to use RVM or something like that.
+1. `gem install bundler`.
+1. `bundle install`.
+1. Build and preview the site with `bundle exec jekyll serve`.
+
+## Contributing
+
+* Make whatever changes you see fit. The gh-pages branch is what's
+  published.
+* Issue a PR with your changes.
+* Two +1s and you can merge your PR. A merge will almost immediately
+  change the published site.
+
+## About the Lanyon Theme
 
 Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
@@ -6,7 +26,7 @@ Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content 
 ![Lanyon with open sidebar](https://f.cloud.github.com/assets/98681/1825267/be04a914-71b0-11e3-966f-8afe9894c729.png)
 
 
-## Contents
+### Contents
 
 - [Usage](#usage)
 - [Options](#options)
@@ -18,17 +38,17 @@ Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content 
 - [License](#license)
 
 
-## Usage
+### Usage
 
 Lanyon is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
 
 
-## Options
+### Options
 
 Lanyon includes some customizable options, typically applied via classes on the `<body>` element.
 
 
-### Sidebar menu
+#### Sidebar menu
 
 Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
 
@@ -42,7 +62,7 @@ title: About
 **Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
 
 
-### Themes
+#### Themes
 
 Lanyon ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
 
@@ -64,7 +84,7 @@ To use a theme, add any one of the available theme classes to the `<body>` eleme
 To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/lanyon/blob/master/public/css/lanyon.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
 
 
-### Reverse layout
+#### Reverse layout
 
 ![Lanyon with reverse layout](https://f.cloud.github.com/assets/98681/1825265/be03f2e4-71b0-11e3-89f1-360705524495.png)
 ![Lanyon with reverse layout and open sidebar](https://f.cloud.github.com/assets/98681/1825268/be056174-71b0-11e3-88c8-5055bca4307f.png)
@@ -78,7 +98,7 @@ Reverse the page orientation with a single class.
 ```
 
 
-### Sidebar overlay instead of push
+#### Sidebar overlay instead of push
 
 Make the sidebar overlap the viewport content with a single class:
 
@@ -98,7 +118,7 @@ It's also available for a reversed layout when you add both classes:
 </body>
 ```
 
-### Sidebar open on page load
+#### Sidebar open on page load
 
 Show an open sidebar on page load by modifying the `<input>` to add the `checked` boolean attribute:
 
@@ -112,7 +132,7 @@ Using Liquid you can also conditionally show the sidebar open on a per-page basi
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.title =="Home" %}checked{% endif %}>
 ```
 
-## Development
+### Development
 
 Lanyon has two branches, but only one is used for active development.
 
@@ -120,14 +140,14 @@ Lanyon has two branches, but only one is used for active development.
 - `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
 
 
-## Author
+### Author
 
 **Mark Otto**
 - <https://github.com/mdo>
 - <https://twitter.com/mdo>
 
 
-## License
+### License
 
 Open sourced under the [MIT license](LICENSE.md).
 
