@@ -8,6 +8,8 @@ categories:
 
 By Ryan Herlihy
 
+![Ryan]({{ site.baseurl }}/public/images/2015/09/ec597f78add1ab1b5a35749f0d622102.jpeg)
+
 **_Editor’s Note:_**
 
 _Sonian is committed to finding and motivating the
