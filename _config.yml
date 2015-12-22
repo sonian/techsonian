@@ -13,7 +13,7 @@ title:               techSONIAN
 tagline:             "Sonian's technology blog. all about forging ahead in the cloud."
 description:         "An early innovator in cloud-based archiving, Sonian preserves, protects and presents the world’s information."
 url:                 http://iantruslove.github.io
-baseurl:             '/techsonian'
+baseurl:             ''
 paginate:            5
 
 # About/contact
