@@ -12,6 +12,11 @@ Visit the blog at http://techsonian.net
 
 ## Contributing
 
+* This is a Jekyll blog hosted on GitHub
+  pages. [Here](https://help.github.com/articles/using-jekyll-with-pages/)
+  is a basic intro to how those two things work with each other, and
+  the [Jekyll site](https://jekyllrb.com/) has lots of
+  [good docs](https://jekyllrb.com/docs/home/).
 * Make whatever changes you see fit. The gh-pages branch is what's
   published.
 * Issue a PR with your changes.
